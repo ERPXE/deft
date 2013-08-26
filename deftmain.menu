@@ -1,0 +1,17 @@
+LABEL DEFTLIVE
+MENU LABEL ^DEFT Linux LIVE
+KERNEL er/plugins/deft/vmlinuz
+INITRD er/plugins/deft/initrd.lz
+APPEND file=er/plugins/deft/lubuntu.seed boot=casper netboot=nfs nfsroot=10.0.0.1:/tftpboot/er/shares/deft ramdisk_size=200000 nolock aufs
+TEXT HELP
+                 DEFT Live.
+ENDTEXT
+
+LABEL DEFTINST
+MENU LABEL ^DEFT Linux Install
+KERNEL er/plugins/deft/vmlinuz
+INITRD er/plugins/deft/initrd.lz
+APPEND file=er/plugins/deft/lubuntu.seed boot=casper netboot=nfs nfsroot=10.0.0.1:/tftpboot/er/shares/deft ramdisk_size=200000 nolock aufs only-ubiquity
+TEXT HELP
+                 DEFT Install.
+ENDTEXT
