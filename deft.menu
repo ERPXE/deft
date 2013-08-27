@@ -1,9 +1,6 @@
 MENU BEGIN DEFT
+MENU TITLE DEFT Linux Live 7
 MENU LABEL ^DEFT Linux Live 7
-# ------====> Include Menu Settings <====------
-MENU INCLUDE er/menuinc/header.module
-
-# ------====> Set Specific Page Settings <====------
 MENU BACKGROUND er/plugins/deft/deft.png
 
 MENU INCLUDE er/plugins/deft/deftmain.menu
